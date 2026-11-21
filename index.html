@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#1f7a3d">
+<meta name="description" content="Aile için günlük iyilik, sorumluluk ve iyilik hâli ağacı.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="İyi Ailem">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>İyi Ailem, İyi Mahallem</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="ikon/ikon-192.png">
+<link rel="apple-touch-icon" href="ikon/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="uygulama">
+  <header class="ust">
+    <h1>İyi Ailem,<br><span>İyi Mahallem</span></h1>
+    <button id="ayarDugme" class="ust-dugme" type="button" aria-label="Ayarlar">⚙️</button>
+  </header>
+
+  <main id="ekran" tabindex="-1"></main>
+
+  <nav class="sekmeler" aria-label="Ana menü">
+    <button type="button" data-sekme="agac"><span class="s-ikon" aria-hidden="true">🌳</span><span>Ağacım</span></button>
+    <button type="button" data-sekme="bugun"><span class="s-ikon" aria-hidden="true">🌤️</span><span>Bugün</span></button>
+    <button type="button" data-sekme="ailem"><span class="s-ikon" aria-hidden="true">🏠</span><span>Ailem</span></button>
+    <button type="button" data-sekme="mahalle"><span class="s-ikon" aria-hidden="true">🤝</span><span>Mahallem</span></button>
+    <button type="button" data-sekme="rozet"><span class="s-ikon" aria-hidden="true">🏅</span><span>Rozetler</span></button>
+  </nav>
+</div>
+
+<div id="tamEkran" hidden></div>
+<div id="altSayfa" hidden></div>
+<div id="katman" hidden></div>
+<div id="tost" role="status" aria-live="polite"></div>
+<section id="yazdirAlani" hidden></section>
+
+<noscript><p class="noscript">Bu uygulama için JavaScript açık olmalı.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
